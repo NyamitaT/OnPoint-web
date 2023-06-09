@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ON-POINT</title>
+  <link rel="stylesheet" href="On-point.css">
+  <style>
+    /* Add some basic styles for the website */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    #meal-plan {
+      margin-top: 20px;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #meal-plan th,
+    #meal-plan td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    
+    #meal-plan th {
+      background-color: rgb(3, 13, 13);
+      color: #fff;
+      text-align: left;
+    }
+    #header {
+      background-color: aqua;
+    }
+    #first{
+      background-image:url("") ;
+    }
+    #food{
+      width:100%;
+      height: 120px; 
+    }
+   
+  </style>
+</head>
+<body>
+  <div id="first">
+    <img id="food" src="C:\Users\oliver\Downloads\proj.jpg" alt="">
+    <div id="header">
+
+      <h1>On-Point</h1>
+    </div>
+  </div>
+  
+  <label for="cost">Maximum Cost:</label>
+  <input type="number" id="cost" placeholder="Enter cost">
+  
+  <label for="weight">Maximum Weight:</label>
+  <input type="number" id="weight" placeholder="Enter weight">
+  
+  <label for="body-goals">Body Goals:</label>
+  <select id="body-goals">
+    <option value="weight-loss">Weight Loss</option>
+    <option value="weight-gain">Weight Gain</option>
+    <option value="maintain-weight">Maintain Weight</option>
+  </select>
+  
+  <button onclick="generateMealPlan()">Generate Meal Plan</button>
+  
+  <table id="meal-plan">
+    <thead>
+      <tr>
+        <th>Meal</th>
+        <th>Cost</th>
+        <th>Weight</th>
+      </tr>
+    </thead>
+    <tbody id="meal-plan-body">
+      <!-- Meal plan results will be inserted here -->
+    </tbody>
+  </table>
+  
+  <script src="onpoint.js"></script>
+</body>
+</html>
+
