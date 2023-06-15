@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OnPoint Meal Planner</title>
+  <link rel="stylesheet" type="text/css" href="point.css">
+</head>
+<body>
+  <header>
+    <h1>OnPoint Meal Planner</h1>
+  </header>
+
+  <main>
+    <div id="filters">
+      <h2>Filters</h2>
+      <label for="timeFilter">Time:</label>
+      <select id="timeFilter">
+        <option value="any">Any</option>
+        <option value="quick">Quick</option>
+        <option value="moderate">Moderate</option>
+        <option value="slow">Slow</option>
+      </select>
+
+      <label for="costFilter">Cost:</label>
+      <select id="costFilter">
+        <option value="any">Any</option>
+        <option value="cheap">cheap($0-10)</option>
+        <option value="moderate">Moderate($11-30)</option>
+        <option value="expensive">Expensive($31+)</option>
+      </select>
+
+      <label for="goalFilter">Body Goals:</label>
+      <select id="goalFilter">
+        <option value="any">Any</option>
+        <option value="weightLoss">Weight Loss</option>
+        <option value="maintenance">Maintenance</option>
+        <option value="muscleGain">Muscle Gain</option>
+      </select>
+
+      <button id="filterButton">Filter</button>
+    </div>
+
+
+<div id="container">
+  <div id="mealList">
+    <div class="meal-item">
+      <!-- Meal item content -->
+    </div>
+    <div class="meal-item">
+      <!-- Meal item content -->
+    </div>
+    <!-- More meal items -->
+  </div>
+
+</div>
+    
+  </main>
+
+  <script src="point.js"></script>
+</body>
+</html>
