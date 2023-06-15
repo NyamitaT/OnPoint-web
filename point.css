@@ -1,0 +1,132 @@
+/* point.css */
+
+/* Apply some basic styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-image: linear-gradient(to right, #fbc2eb, #a18cd1);
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-size: 36px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+/* Style the main content */
+
+/* Style the filters section */
+#filters {
+  margin-bottom: 20px;
+  background-image:linear-gradient(to left, #050505,#e4dbdb);
+  margin: 10px;
+  height: 15vh;
+}
+
+#filters h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-top: 50px;
+}
+
+#filters label {
+  margin-right: 10px;
+}
+
+#filters select {
+  margin-right: 80px;
+}
+
+#filterButton {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+  perspective: 1000px;
+}
+
+#filterButton:hover {
+  background-color: #45a049;
+  transform: scale(2.0) rotateY(180deg);
+}
+#container{
+  background-color: #45a049;
+  height: 25vh;
+}
+
+/* Style the meal list section */
+#mealList {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display:block;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: slideIn 1s ease-in-out;
+ 
+}
+
+/* Animation for fading in meal items */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.meal-item {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease, scaleIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-delay: 0.2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Additional styles and animations can be added as per your requirement */
+
